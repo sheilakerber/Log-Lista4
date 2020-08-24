@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista4</title>
+        <link rel="stylesheet" href="lista4.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <!--EX1: media de 5 numeros pares -->
+            <div class="exercicio">
+                <input id="num1" type="number" placeholder="Número 1">
+                <input id="num2" type="number" placeholder="Número 2">
+                <input id="num3" type="number" placeholder="Número 3">
+                <input id="num4" type="number" placeholder="Número 4">
+                <input id="num5" type="number" placeholder="Número 5">
+                <br>
+                <button onclick="calcularMedia()">Calcular</button>
+                <p class="resultado" id="resultadoMediaPares"></p>
+            </div>
+
+            <!--EX2: altura Joao e Pedro -->
+            <div class="exercicio">
+                <p>Joãozinho mede 1,75m de altura e cresce 1 cm por ano, enquanto seu amigo Pedrinho tem 1,60m de altura e cresce 3 cm por ano. Quer saber em quantos anos Pedrinho será mais alto que Joãozinho?</p>
+                <div id="button">
+                    <button onclick="calcularAltura()">Clique Aqui!</button>
+                </div>
+                <p class="resultado" id="resultadoAltura"></p>
+            </div>
+
+            <!--EX3: salada de frutas -->
+            <div class="exercicio">
+                <p>Monte sua salada de frutas</p>
+                <small>OBS: em letras minúsculas!</small><br>
+                <input type="text" placeholder="Adicione uma fruta" id="frutaAdicionada">
+                <button onclick="adicionarFruta()">Adicionar</button>
+                <p class="resultado" id="resultadoSaladaFrutas"></p>
+
+            </div>
+
+            <!--EX4: multas -->
+            <div class="exercicio">
+                <p>Insira o número de multas que deseja adicionar no sistema</p>
+                <input type="number" id="numMultas">
+                <button onclick="getNumMultas()">Adicionar</button>
+                <p class="resultado" id="resultadoMultas"></p>
+            </div>
+
+        </div>
+
+    </body>
+    <script src="lista4.js"></script>
+</html>
